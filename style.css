@@ -1,0 +1,145 @@
+/*Mobile First*/
+
+body {
+    background-color: #f9fafc;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    margin: 5px;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 5px;
+  height: 110px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.firstitem {
+  color: #000;
+  font-weight: 550;
+  display: flex;
+  flex: 1;
+}
+
+a {
+  text-decoration: none;
+  display: flex;
+  color: #69696a;
+  margin: 5px;
+  justify-content: flex-end;
+  flex: 3;
+}
+
+h1 {
+  font-weight: 500;
+  padding: 5px;
+  border: 5px;
+}
+
+p {
+  color: #69696a;
+  letter-spacing: 1px;
+  margin: 5px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  border-left: 2px solid #000;
+  left: 50%;
+  margin-right: -5px;
+  font-size: 14px;
+}
+
+.button {
+  background-color: #000;
+  border: none;
+  color:#FFF;
+  padding: 10px 80px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+  }
+
+  /* vvvv Below applies to desktop vvvv */
+
+
+  @media (min-width: 786px) {
+
+
+    .firstitem {
+      align-self: flex-start;
+      justify-content: flex-start; 
+      flex: 25;
+    }
+
+    nav {
+      flex-direction: row;
+      flex: 1;
+      justify-content: space-around;
+      padding-right: 115px;
+    }
+
+    a {
+      justify-content: flex-end;
+    }
+
+    p {
+      width: 50%;
+    }
+
+    div {
+      border-radius: 50%;
+      position: absolute;
+    }
+
+    .redcircle {
+      height: 165px;
+      width: 165px;
+      top: 234px;
+      right: 65px;
+      background-color: rgba(247, 136, 167, 0.6);
+      opacity: 0.8;
+    }
+
+    .yellowcircle {
+      height: 120px;
+      width: 120px;
+      top: 330px;
+      right: 10px;
+      background-color:rgba(247, 193, 162, 0.7);
+      opacity: 0.8;
+    }
+
+    .purplecircle {
+      height: 90px;
+      width: 90px;
+      top: 270px;
+      right: 10px;
+      background-color:rgba(207, 130, 213, 0.6);
+      opacity: 0.8;
+     }
+
+
+    .button {
+      width: 80px;
+      padding: 7px 10px;
+    }
+
+    .hireus {
+      position: absolute;
+      right: 10px;
+      top: 15px;
+    }
+
+    .scrolldown {
+      position: absolute;
+      bottom: 5px;
+      right: 43%;
+    }
+
+  }
